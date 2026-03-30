@@ -15,8 +15,8 @@ TrainSmart uses an agentic loop powered by the OpenAI API. When you submit a run
 6. The loop exits when the model stops issuing tool calls and returns a final response
 
 **Tools available to the agent:**
-- `calculate_target_mileage` — applies the 10% rule to compute a safe peak mileage given your race goal and timeline
-- `calculate_pace_zones` — derives easy, tempo, and interval pace zones based on your experience level
+- `calculate_target_mileage` - applies the 10% rule to compute a safe peak mileage given your race goal and timeline
+- `calculate_pace_zones` - derives easy, tempo, and interval pace zones based on your experience level
 
 ## Tech Stack
 
@@ -100,6 +100,6 @@ trainsmart/
 ## Future Improvements
 
 - **Strava integration** - pull real activity data via OAuth instead of relying on user-provided input
-- **Persistent training history** — store plans and completed runs in PostgreSQL to enable week-over-week adaptation
-- **Plan adjustment** — allow the agent to modify an existing plan based on feedback ("that long run felt too hard")
-- **Injury risk scoring** — compute acute:chronic workload ratio (ACWR) from historical data and surface warnings before generating a plan
+- **Persistent training history** - store plans and completed runs in PostgreSQL to enable week-over-week adaptation
+- **Plan adjustment** - allow the agent to modify an existing plan based on feedback ("that long run felt too hard")
+- **Injury risk scoring** - compute acute:chronic workload ratio (ACWR) from historical data and surface warnings before generating a plan
